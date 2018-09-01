@@ -51,13 +51,21 @@ namespace ZHS.Configuration.NFX.Consul
                 config.AddConsul(key, ConfigCancellationTokenSource.Token, options =>
                 {
                     options.ConsulConfigurationOptions =
-                        co => { co.Address = new Uri(appSettings["ConsulConfig:Address"]);  };
+                        co => { co.Address = new Uri(appSettings["ConsulConfig:Address"]); };
                     options.ReloadOnChange = Convert.ToBoolean(appSettings["ConsulConfig:ReloadOnChange"]);
                     options.Optional = true;
                     options.OnLoadException = exceptionContext => { exceptionContext.Ignore = false; };
                 });
                 //var test = config.Build();
                 config.Build().AddConfigurationGeterLocator();
+            }
+        }
+
+        protected void Application_End(object sender, EventArgs e)
+        {
+            if (EnableConsulConfig)
+            {
+                ConfigCancellationTokenSource.Cancel();
             }
         }
     }
