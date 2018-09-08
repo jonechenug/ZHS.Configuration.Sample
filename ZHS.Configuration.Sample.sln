@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZHS.Configuration.DotNetCor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZHS.Configuration.NFX.Consul", "src\ZHS.Configuration.NFX.Consul\ZHS.Configuration.NFX.Consul.csproj", "{920FAA5A-8200-49E5-9374-1AC95A85FB20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZHS.Configuration.NFX.Sample", "src\ZHS.Configuration.NFX.Sample\ZHS.Configuration.NFX.Sample.csproj", "{CB8DFB2A-6939-4C7F-98E7-DBCE44894430}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{920FAA5A-8200-49E5-9374-1AC95A85FB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{920FAA5A-8200-49E5-9374-1AC95A85FB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{920FAA5A-8200-49E5-9374-1AC95A85FB20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB8DFB2A-6939-4C7F-98E7-DBCE44894430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB8DFB2A-6939-4C7F-98E7-DBCE44894430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB8DFB2A-6939-4C7F-98E7-DBCE44894430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB8DFB2A-6939-4C7F-98E7-DBCE44894430}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 		{AA124682-20C3-4204-8C2C-3B0DCFE5ACC3} = {048C8BFD-DE24-4B8F-9525-766DA6E63FC9}
 		{0D65218C-9359-452F-9C4B-BB894D47B56F} = {AA124682-20C3-4204-8C2C-3B0DCFE5ACC3}
 		{920FAA5A-8200-49E5-9374-1AC95A85FB20} = {AA124682-20C3-4204-8C2C-3B0DCFE5ACC3}
+		{CB8DFB2A-6939-4C7F-98E7-DBCE44894430} = {AA124682-20C3-4204-8C2C-3B0DCFE5ACC3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E35D0A1-CEFE-4364-9FF9-847A134E6E16}
